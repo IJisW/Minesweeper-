@@ -1,1 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f1f3f4;
+  text-align: center;
+}
 
+h1 {
+  margin: 10px;
+}
+
+.controls {
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 8px 12px;
+  font-size: 14px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(15, 32px);
+  gap: 2px;
+  justify-content: center;
+}
+
+.cell {
+  width: 32px;
+  height: 32px;
+  background: #cfd8dc;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+
+.cell.revealed {
+  background: #eceff1;
+  cursor: default;
+}
+
+.cell.flag {
+  background: #cfd8dc;
+}
